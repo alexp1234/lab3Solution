@@ -1,0 +1,46 @@
+A) How to generate and submit a batch of scripts that will individually use 1, 2, 4, 8, 16, 32, 64 processes to execute the GlobalSum application? 
+> 
+1. Log in the mamba cluster if you did not log in yet
+2. Enter your GlobalSum project folder
+3. Retrieve the full path of your GlobalSum project folder by
+$ pwd
+
+4. Execute the glbalsum_mamba_submit.sh 
+Usage:
+$ sh ./globalsum_mamba_submit.sh ${project_name} ${project_path} ${start_value}  ${end_value} ${is_to_run}
+
+For example,
+$ ./globalsum_mamba_submit.sh GlobalSum /users/qcheng1/3145/GlobalSum -10000000000 10000000001 1
+
+Note that you need to customize the project_path with your GlobalSum project folder path that you retrieve from the step 3.
+
+B) How to retrieve the execution runtime information for each configuration of the number of processes that we use?
+>
+1. Log in the mamba cluster if you did not log in yet
+2. Enter your GlobalSum project folder 
+3. Retrieve the full path of your GlobalSum project folder by
+$ pwd
+
+4. Execute the GlobalSum_analysis.sh 
+Usage:
+$ sh ./GlobalSum_analysis.sh ${project_name} ${project_path} 
+
+For example,
+$ ./GlobalSum_analysis.sh GlobalSum /users/qcheng1/3145/GlobalSum
+
+Note that you need to customize the project_path with your GlobalSum project fol
+der path that you retrieve from the step 3.
+
+C) How to kill my jobs that I submitted in the mamba cluster?
+>
+1. Log in the mamba cluster if you did not log in yet
+2. Enter your GlobalSum project folder
+3. Retrieve the full path of your GlobalSum project folder by
+$ pwd
+
+4. Execute the mamba_killjob.sh 
+Usage:
+$ sh ./mamba_killjob.sh
+
+
+

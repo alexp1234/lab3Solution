@@ -1,0 +1,2 @@
+./GlobalSum_mamba_submit.sh GlobalSum /users/qcheng1/3145/Lab_MPI_P2_GlobalSum -10000000000 10000000001 1
+./GlobalSum_analysis.sh GlobalSum  /users/qcheng1/3145/Lab_MPI_P2_GlobalSum
